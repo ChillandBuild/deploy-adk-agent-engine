@@ -1,7 +1,7 @@
 from google.adk.agents import Agent
-
 from Quote_boy.prompt import ROOT_AGENT_INSTRUCTION
 from Quote_boy.tools import count_characters
+import sys
 
 root_agent = Agent(
     name="Quote_boy",
@@ -10,3 +10,5 @@ root_agent = Agent(
     instruction=ROOT_AGENT_INSTRUCTION,
     tools=[count_characters],
 )
+
+print(sys.path)
